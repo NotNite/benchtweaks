@@ -1,0 +1,18 @@
+[package]
+name = "benchtweaks"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+anyhow = "1.0.82"
+bytemuck = "1.15.0"
+crc = "3.2.1"
+msgbox = "0.7.0"
+proxy-dll = "0.2.5"
+retour = { version = "0.3.1", features = ["static-detour"] }
+serde = { version = "1.0.198", features = ["derive"] }
+skidscan = "2.0.1"
+toml = "0.8.12"
